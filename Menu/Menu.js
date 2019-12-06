@@ -50,8 +50,12 @@ function createMenu(menu){
 
   menuDiv.classList.add('menu')
 
-  menuHide.addEventListener('click', () => {
-    menuDiv.classList.toggle('menu--open')
+  const menuOpen = document.querySelector('.menu--open');
+  
+  const animation = gsap.to(menuDiv, {duration: 1.5, x: 100})
+
+  menuHide.addEventListener('click', (e) => {
+     
   })
 
 return menuDiv
